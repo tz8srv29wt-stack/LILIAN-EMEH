@@ -1,0 +1,692 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f7f9fc;
+}
+
+/* NAVIGATION */
+
+.header {
+  background: #002942;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  text-decoration: none;
+  background: linear-gradient(135deg, #ff7b00, #ffae00);
+
+  color: white;
+  padding: 14px 30px;
+  border-radius: 50px;
+}
+
+/* HERO */
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 20px;
+  background-image: url(css/background-image.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.tag {
+  background: #e8f1ff;
+  color: #0047ab;
+  padding: 8px 18px;
+  border-radius: 50px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 25px 0;
+  color: #002942;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #002942;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+/* COURSES */
+
+.courses {
+  padding: 100px 20px;
+}
+
+.courses h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+
+.course-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 20px 20px 10px;
+}
+
+.card p {
+  padding: 0 20px 25px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #002942;
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  gap: 40px;
+
+  padding: 80px 50px;
+}
+
+.footer a {
+  display: block;
+  color: #d8d8d8;
+  text-decoration: none;
+  margin-top: 10px;
+}
+/* ========================= */
+/* TABLETS */
+/* ========================= */
+
+@media (max-width: 900px) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 4rem;
+  }
+
+  .hero-image img {
+    max-width: 60%;
+  }
+
+  .menu {
+    gap: 2rem;
+  }
+
+  .courses h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* ========================= */
+/* MOBILE PHONES */
+/* ========================= */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 6rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.6rem;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 25rem;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 43.75%; /* 7px */
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .btn,
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .card img {
+    height: 22rem;
+  }
+
+  .logo {
+    font-size: 2.4rem;
+  }
+}
+
+/* =====================
+   GLOBAL STYLES
+===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+.header {
+  background-color: #002942;
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.menu a:hover {
+  color: orange;
+}
+
+.btn {
+  text-decoration: none;
+  background: orange;
+  color: white;
+  padding: 1.2rem 2.5rem;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 41, 66, 0.75), rgba(0, 41, 66, 0.75)),
+    url("../image/background.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 80vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  padding: 5rem;
+}
+
+.hero-text h1 {
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text p {
+  color: #ddd;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tag {
+  background-color: orange;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+}
+
+.hero-btn {
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  font-size: 1.8rem;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+/* =====================
+   PAGE BANNER
+===================== */
+
+.page-banner {
+  background-color: #002942;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.page-banner h1 {
+  font-size: 4rem;
+}
+
+/* =====================
+   ABOUT PAGE
+===================== */
+
+.about-section {
+  max-width: 120rem;
+  margin: 5rem auto;
+  padding: 0 2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  font-size: 1.8rem;
+}
+
+.about-images img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.mission-vision {
+  max-width: 120rem;
+  margin: 5rem auto;
+  padding: 0 2rem;
+
+  display: flex;
+  gap: 3rem;
+}
+
+.mission,
+.vision {
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  flex: 1;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.mission h2,
+.vision h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* =====================
+   COURSES
+===================== */
+
+.courses {
+  padding: 8rem 2rem;
+}
+
+.courses h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+.course-grid {
+  max-width: 120rem;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 2.2rem;
+  padding: 2rem 2rem 1rem;
+}
+
+.card p {
+  font-size: 1.6rem;
+  padding: 0 2rem 2rem;
+}
+
+/* =====================
+   CONTACT PAGE
+===================== */
+
+.contact-section {
+  max-width: 120rem;
+  margin: 5rem auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+
+  padding: 0 2rem;
+}
+
+.contact-info {
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  display: block;
+  margin-top: 1rem;
+  color: #002942;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.contact-form {
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1.2rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.contact-form button {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: orange;
+  color: white;
+  cursor: pointer;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+.footer {
+  background-color: #002942;
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 3rem;
+
+  padding: 5rem;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 1.5rem;
+}
+
+.footer a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.footer a:hover {
+  color: orange;
+}
+/* TABLETS */
+
+@media (max-width: 900px) {
+  .hero,
+  .about-section,
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 3.8rem;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-vision {
+    flex-direction: column;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
